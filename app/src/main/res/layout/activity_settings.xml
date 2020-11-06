@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSignInBg"
+    tools:context=".activity.SettingsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/dimen_12">
+
+            <ImageView
+                android:id="@+id/img_back_btn"
+
+                android:layout_width="@dimen/dimen_28"
+                android:layout_height="@dimen/dimen_22"
+                android:layout_gravity="left"
+                android:src="@drawable/ic_back" />
+
+            <in.lanetbit.utils.customView.TextViewUbuntuBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_28"
+                android:text="@string/setting_title"
+                android:textColor="@color/colorTextGrey"
+                android:textSize="@dimen/text_large" />
+
+            <LinearLayout
+                android:id="@+id/ll_passport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_28"
+                android:background="@drawable/edit_text_border"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_12">
+
+                <in.lanetbit.utils.customView.TextViewUbuntuMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/currency_preference_name"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_normal" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:background="@drawable/edit_text_border"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_12">
+
+                <in.lanetbit.utils.customView.TextViewUbuntuMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/share_app_name"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_normal" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/ll_contact_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:background="@drawable/edit_text_border"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_12"
+                >
+
+                <in.lanetbit.utils.customView.TextViewUbuntuMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/contact_us_name"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_normal"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/ll_change_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:background="@drawable/edit_text_border"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_12"
+                >
+
+                <in.lanetbit.utils.customView.TextViewUbuntuMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/change_password_name"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_normal"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_terms_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:background="@drawable/edit_text_border"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_12">
+
+                <in.lanetbit.utils.customView.TextViewUbuntuMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/terms_condition_name"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_normal" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_faq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:background="@drawable/edit_text_border"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_12">
+
+                <in.lanetbit.utils.customView.TextViewUbuntuMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/faq_name"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_normal" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:background="@drawable/edit_text_border"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_12">
+
+                <in.lanetbit.utils.customView.TextViewUbuntuMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/help_name"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_normal" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_legal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:background="@drawable/edit_text_border"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_12">
+
+                <in.lanetbit.utils.customView.TextViewUbuntuMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/legal_name"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_normal" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_38"
+                android:orientation="horizontal"
+                >
+
+                <in.lanetbit.utils.customView.TextViewUbuntuMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/push_notification_name"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorTextGrey"
+                    android:textFontWeight="1"
+                    android:textSize="@dimen/text_normal" />
+
+                <Switch
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:gravity="left"
+                    android:layout_gravity="left"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:orientation="horizontal">
+
+                <in.lanetbit.utils.customView.TextViewUbuntuMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/security_2fa_name"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorTextGrey"
+                    android:textFontWeight="1"
+                    android:textSize="@dimen/text_normal" />
+
+                <Switch
+                    android:id="@+id/sw_security_two_fa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:gravity="left"
+                    android:layout_gravity="left"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

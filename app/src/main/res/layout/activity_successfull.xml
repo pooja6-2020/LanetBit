@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorSignInBg"
+    tools:context=".activity.SuccessfullActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerInParent="true">
+    <ImageView
+        android:layout_width="@dimen/dimen_82"
+        android:layout_height="@dimen/dimen_82"
+        android:src="@drawable/ic_verified"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_18"
+        android:layout_marginTop="@dimen/dimen_82"
+
+        >
+    <in.lanetbit.utils.customView.TextViewUbuntuMedium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/thank_you_title"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_large"
+        android:gravity="center"
+        />
+    <in.lanetbit.utils.customView.TextViewUbuntuLight
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_normal"
+        android:textColor="@color/colorTextGrey"
+        android:text="@string/payment_desc_title"
+        android:layout_marginTop="@dimen/dimen_28"
+        android:gravity="center"/>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cd_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        card_view:cardCornerRadius="@dimen/dimen_18"
+        app:cardBackgroundColor="@color/colorAccent"
+        android:background="@android:color/transparent"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="0dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/dimen_82"
+        android:layout_marginLeft="@dimen/dimen_72"
+        android:layout_marginRight="@dimen/dimen_72"
+        >
+
+        <in.lanetbit.utils.customView.TextViewUbuntuMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/continue_title"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_normal"
+            android:gravity="center"
+            android:padding="@dimen/padding_8"/>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+</RelativeLayout>

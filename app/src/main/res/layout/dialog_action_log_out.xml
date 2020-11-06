@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_margin="@dimen/dimen_28"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/dimen_48"
+        android:layout_height="@dimen/dimen_48"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_log_out" />
+
+    <in.lanetbit.utils.customView.TextViewUbuntuRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_28"
+        android:gravity="center"
+        android:text="@string/log_out_subtitle"
+        android:textSize="@dimen/text_normal"
+        android:textColor="@color/colorTextGrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_marginTop="@dimen/dimen_38"
+        android:layout_marginRight="@dimen/dimen_12">
+
+        <in.lanetbit.utils.customView.TextViewUbuntuMedium
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel_title"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_normal"
+            android:background="@drawable/green_button_bg"
+            android:padding="@dimen/padding_8"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dimen_12"
+
+
+            />
+        <in.lanetbit.utils.customView.TextViewUbuntuMedium
+            android:id="@+id/tv_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ok_title"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_normal_17"
+            android:layout_marginLeft="@dimen/dimen_12"
+
+            android:background="@drawable/green_button_bg"
+            android:padding="@dimen/padding_8"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

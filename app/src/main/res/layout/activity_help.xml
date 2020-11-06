@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSignInBg"
+    tools:context=".activity.HelpActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/dimen_28"
+        android:layout_height="@dimen/dimen_22"
+        android:layout_gravity="left"
+        android:src="@drawable/ic_back" />
+
+    <in.lanetbit.utils.customView.TextViewUbuntuBold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_28"
+        android:text="@string/help_name"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_large" />
+        <in.lanetbit.utils.customView.TextViewUbuntuMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/email_us_name"
+            android:textColor="@color/colorTextGrey"
+            android:textSize="@dimen/text_normal"
+            android:layout_marginTop="@dimen/dimen_22"/>
+        <in.lanetbit.utils.customView.TextViewUbuntuMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lanetbit_support@gmail.com"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_normal"
+            android:layout_marginTop="@dimen/dimen_8"/>
+        <in.lanetbit.utils.customView.TextViewUbuntuMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/customer_care_name"
+            android:textColor="@color/colorTextGrey"
+            android:textSize="@dimen/text_normal"
+            android:layout_marginTop="@dimen/dimen_22"/>
+        <in.lanetbit.utils.customView.TextViewUbuntuMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1800 2424 8628"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_normal"
+            android:layout_marginTop="@dimen/dimen_8"/>
+        <in.lanetbit.utils.customView.TextViewUbuntuLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/dimen_18"
+            android:layout_marginLeft="@dimen/dimen_2"
+            android:layout_marginRight="@dimen/dimen_2"
+            android:text="@string/help_desc"
+            android:textColor="@color/colorTextGrey"
+            android:textSize="@dimen/text_normal" />
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

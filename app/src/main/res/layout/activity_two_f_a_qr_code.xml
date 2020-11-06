@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSignInBg"
+    tools:context=".activity.TwoFAQrCodeActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dimen_12"
+        android:layout_marginRight="@dimen/dimen_12"
+        android:layout_gravity="center">
+        <in.lanetbit.utils.customView.TextViewUbuntuBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/two_fa_head_title"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:textSize="@dimen/text_large"
+            android:layout_marginTop="@dimen/dimen_28"
+            />
+        <LinearLayout
+            android:id="@+id/ll_qr_code_ui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <in.lanetbit.utils.customView.TextViewUbuntuRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/two_fa_desc_title"
+                android:textColor="@color/colorTextGrey"
+                android:textSize="@dimen/text_normal"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dimen_18"
+                />
+            <ImageView
+                android:id="@+id/iv_qr_code_"
+                android:layout_width="@dimen/dimen_222"
+                android:layout_height="@dimen/dimen_222"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_72"
+                />
+
+        </LinearLayout>
+        <in.lanetbit.utils.customView.TextViewUbuntuRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/type_code_title"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_normal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dimen_48"/>
+        <in.lanetbit.utils.customView.EditTextUbuntuLight
+            android:id="@+id/ed_verification_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48"
+            android:background="@drawable/edit_text_border"
+            android:hint="@string/verification_code_name"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorTextGrey"
+            android:textSize="@dimen/text_normal"
+            android:padding="@dimen/padding_12"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_marginTop="@dimen/dimen_28"
+
+
+            />
+
+        <in.lanetbit.utils.customView.TextViewUbuntuMedium
+            android:id="@+id/tv_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_button_bg"
+            android:text="@string/confirm_otp_name"
+            android:textSize="@dimen/text_normal_17"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:padding="@dimen/padding_12"
+            android:textAllCaps="true"
+            android:layout_marginTop="@dimen/dimen_18"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/colorShadowBg"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="1dp"
+    app:cardCornerRadius="@dimen/dimen_8"
+    android:layout_marginTop="@dimen/dimen_12"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_48"
+                android:orientation="horizontal"
+                android:background="@color/colorAccent">
+                <in.lanetbit.utils.customView.TextViewUbuntuRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_large"
+                    android:text="@string/status_title"
+                    android:padding="@dimen/padding_5"
+                    android:layout_gravity="left|center"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    />
+
+                <in.lanetbit.utils.customView.TextViewUbuntuRegular
+                    android:id="@+id/tv_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_large"
+                    android:padding="@dimen/padding_5"
+                    android:layout_gravity="right|center"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dimen_4">
+                    <in.lanetbit.utils.customView.TextViewUbuntuRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="@dimen/text_normal"
+                        android:padding="@dimen/padding_5"
+                        android:text="@string/currency_from_title"
+                        android:layout_gravity="left|center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        />
+
+                    <in.lanetbit.utils.customView.TextViewUbuntuRegular
+                        android:id="@+id/tv_currency_from"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_semi_normal"
+                        android:padding="@dimen/padding_5"
+                        android:layout_gravity="right|center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dimen_4">
+                    <in.lanetbit.utils.customView.TextViewUbuntuRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="@dimen/text_normal"
+                        android:padding="@dimen/padding_5"
+                        android:text="@string/currency_to_title"
+                        android:layout_gravity="left|center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        />
+
+                    <in.lanetbit.utils.customView.TextViewUbuntuRegular
+                        android:id="@+id/tv_currency_to"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_semi_normal"
+                        android:padding="@dimen/padding_5"
+                        android:layout_gravity="right|center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dimen_4">
+                    <in.lanetbit.utils.customView.TextViewUbuntuRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="@dimen/text_normal"
+                        android:padding="@dimen/padding_5"
+                        android:text="@string/money_received_title"
+                        android:layout_gravity="left|center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        />
+
+                    <in.lanetbit.utils.customView.TextViewUbuntuRegular
+                        android:id="@+id/tv_money_received"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_semi_normal"
+                        android:padding="@dimen/padding_5"
+                        android:layout_gravity="right|center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dimen_4">
+                    <in.lanetbit.utils.customView.TextViewUbuntuRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="@dimen/text_normal"
+                        android:padding="@dimen/padding_5"
+                        android:text="@string/money_sent_title"
+                        android:layout_gravity="left|center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        />
+
+                    <in.lanetbit.utils.customView.TextViewUbuntuRegular
+                        android:id="@+id/tv_money_sent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_semi_normal"
+                        android:padding="@dimen/padding_5"
+                        android:layout_gravity="right|center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dimen_4"
+                    android:layout_marginBottom="@dimen/dimen_12">
+                    <in.lanetbit.utils.customView.TextViewUbuntuRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="@dimen/text_normal"
+                        android:padding="@dimen/padding_5"
+                        android:text="@string/total_fee_title"
+                        android:layout_gravity="left|center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        />
+
+                    <in.lanetbit.utils.customView.TextViewUbuntuRegular
+                        android:id="@+id/tv_total_fee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_semi_normal"
+                        android:padding="@dimen/padding_5"
+                        android:layout_gravity="right|center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorSignInBg"
+    tools:context=".activity.OrderHistoryActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/img_back_btn"
+
+        android:layout_width="@dimen/dimen_28"
+        android:layout_height="@dimen/dimen_22"
+        android:layout_margin="@dimen/dimen_8"
+        android:src="@drawable/ic_back"
+        android:paddingTop="@dimen/padding_5"/>
+
+    <in.lanetbit.utils.customView.TextViewUbuntuMedium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_weight="1"
+        android:text="@string/wallet_title"
+        android:textColor="@color/colorTextGrey"
+        android:textSize="@dimen/text_large"
+        android:layout_marginLeft="@dimen/dimen_8"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_28"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        app:cardBackgroundColor="@color/colorShadowBg"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="@dimen/dimen_12"
+        android:layout_margin="@dimen/dimen_12"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_18">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_72"
+                android:layout_height="@dimen/dimen_72"
+                android:layout_gravity="top"
+                android:src="@drawable/ic_wallet_fill" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="@dimen/dimen_12"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <in.lanetbit.utils.customView.TextViewUbuntuMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lanetbit_wallet_title"
+                    android:textColor="@color/colorTextGrey"
+                    android:textSize="@dimen/text_normal"
+                    android:layout_marginLeft="@dimen/dimen_2"
+                    app:textAllCaps="true"/>
+                <in.lanetbit.utils.customView.TextViewUbuntuMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0.456 BTC"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_xx_large"
+                    android:layout_marginTop="@dimen/dimen_8"
+
+                    android:layout_marginLeft="@dimen/dimen_2"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dimen_12">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/dimen_168"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="@dimen/dimen_8"
+                    app:cardBackgroundColor="@color/colorAccent"
+                    android:background="@android:color/transparent"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="0dp"
+                    android:layout_gravity="center"
+                    >
+
+                    <in.lanetbit.utils.customView.TextViewUbuntuMedium
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="$0,00,000"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_semi_normal"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_8"
+                        />
+
+                </androidx.cardview.widget.CardView>
+                    <ImageView
+                        android:layout_width="@dimen/dimen_110"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_graph"
+                        android:layout_marginLeft="@dimen/dimen_12"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <in.lanetbit.utils.customView.TextViewUbuntuMedium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_weight="1"
+        android:text="@string/transaction_history_title"
+        android:textColor="@color/colorTextGrey"
+        android:textSize="@dimen/text_normal_17"
+        android:layout_marginLeft="@dimen/dimen_8"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_order_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_28"/>
+
+
+</LinearLayout>
+</ScrollView>

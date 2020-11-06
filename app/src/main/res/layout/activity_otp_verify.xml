@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSignInBg"
+    tools:context=".activity.OtpVerifyActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/dimen_110"
+        android:layout_marginTop="@dimen/dimen_82"
+        android:layout_marginBottom="@dimen/dimen_82"
+        android:background="@drawable/left_half_circle_shape" />
+
+    <ImageView
+        android:id="@+id/iv_parent_logo"
+        android:layout_width="@dimen/dimen_68"
+        android:layout_height="@dimen/dimen_68"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_22"
+        android:src="@drawable/ic_logo_lanetbit" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_parent_logo"
+        android:layout_marginLeft="@dimen/dimen_12"
+        android:layout_marginTop="@dimen/dimen_28"
+        android:layout_marginRight="@dimen/dimen_12"
+        android:orientation="vertical">
+
+        <in.lanetbit.utils.customView.TextViewUbuntuMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/enter_otp_name"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_x_large" />
+
+        <in.lanetbit.utils.customView.TextViewUbuntuLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:gravity="center"
+            android:text="@string/dummy_name"
+            android:textColor="@color/colorTextGrey"
+            android:textSize="@dimen/text_normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dimen_42">
+
+            <in.lanetbit.utils.customView.EditTextUbuntuLight
+                android:id="@+id/ed_first_box"
+                android:layout_width="@dimen/dimen_52"
+                android:layout_height="@dimen/dimen_58"
+                android:gravity="center"
+                android:textColor="@color/colorTextGrey"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:background="@drawable/edit_text_border"
+                android:layout_marginRight="@dimen/dimen_4"
+                android:nextFocusRight="@+id/editText_two"
+                android:imeOptions="actionNext"
+                >
+
+                <requestFocus />
+
+            </in.lanetbit.utils.customView.EditTextUbuntuLight>
+            <in.lanetbit.utils.customView.EditTextUbuntuLight
+                android:id="@+id/ed_second_box"
+                android:layout_width="@dimen/dimen_52"
+                android:layout_height="@dimen/dimen_58"
+                android:gravity="center"
+                android:textColor="@color/colorTextGrey"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:background="@drawable/edit_text_border"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:layout_marginRight="@dimen/dimen_4"
+                android:imeOptions="actionNext"
+                />
+            <in.lanetbit.utils.customView.EditTextUbuntuLight
+                android:id="@+id/ed_third_box"
+                android:layout_width="@dimen/dimen_52"
+                android:layout_height="@dimen/dimen_58"
+                android:gravity="center"
+                android:textColor="@color/colorTextGrey"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:background="@drawable/edit_text_border"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:layout_marginRight="@dimen/dimen_4"
+                android:imeOptions="actionNext"
+                />
+            <in.lanetbit.utils.customView.EditTextUbuntuLight
+                android:id="@+id/ed_four_box"
+                android:layout_width="@dimen/dimen_52"
+                android:layout_height="@dimen/dimen_58"
+                android:gravity="center"
+                android:textColor="@color/colorTextGrey"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:background="@drawable/edit_text_border"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:layout_marginRight="@dimen/dimen_4"
+                android:imeOptions="actionNext"
+                />
+
+            <in.lanetbit.utils.customView.EditTextUbuntuLight
+                android:id="@+id/ed_five_box"
+                android:layout_width="@dimen/dimen_52"
+                android:layout_height="@dimen/dimen_58"
+                android:gravity="center"
+                android:textColor="@color/colorTextGrey"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:background="@drawable/edit_text_border"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:layout_marginRight="@dimen/dimen_4"
+                android:imeOptions="actionNext"
+                />
+
+        </LinearLayout>
+
+        <in.lanetbit.utils.customView.TextViewUbuntuLight
+            android:id="@+id/tv_resent_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_28"
+            android:gravity="right"
+            android:layout_marginRight="@dimen/dimen_38"
+            android:text="@string/resend_otp_name"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_normal" />
+
+        <in.lanetbit.utils.customView.TextViewUbuntuMedium
+            android:id="@+id/tv_confirm_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_18"
+            android:background="@drawable/green_button_bg"
+            android:gravity="center"
+            android:padding="@dimen/padding_12"
+            android:text="@string/confirm_otp_name"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_normal_17"
+            android:layout_marginLeft="@dimen/dimen_28"
+            android:layout_marginRight="@dimen/dimen_28"/>
+    </LinearLayout>
+
+</RelativeLayout>

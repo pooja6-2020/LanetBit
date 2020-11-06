@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSignInBg"
+    tools:context=".activity.LegalActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dimen_12">
+
+    <ImageView
+        android:layout_width="@dimen/dimen_28"
+        android:layout_height="@dimen/dimen_22"
+        android:layout_gravity="left"
+        android:src="@drawable/ic_back" />
+
+    <in.lanetbit.utils.customView.TextViewUbuntuBold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_28"
+        android:text="@string/legal_name"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_large" />
+        <in.lanetbit.utils.customView.TextViewUbuntuBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_38"
+            android:text="@string/head_title"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_normal" />
+        <in.lanetbit.utils.customView.TextViewUbuntuLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/dimen_18"
+            android:layout_marginLeft="@dimen/dimen_2"
+            android:layout_marginRight="@dimen/dimen_2"
+            android:text="@string/privacy_desc"
+            android:textColor="@color/colorTextGrey"
+            android:textSize="@dimen/text_normal"
+            />
+
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

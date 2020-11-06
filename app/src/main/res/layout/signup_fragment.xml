@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="20dp"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/dimen_48"
+        android:layout_marginLeft="@dimen/dimen_12"
+        android:layout_marginRight="@dimen/dimen_12">
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spn_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:popupBackground="@color/colorSignInBg"/>
+
+    <in.lanetbit.utils.customView.EditTextUbuntuLight
+        android:id="@+id/ed_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border"
+        android:hint="@string/user_name_title"
+        android:textColor="@color/colorTextGrey"
+        android:textColorHint="@color/colorTextGrey"
+        android:textSize="@dimen/text_normal"
+        android:padding="@dimen/padding_12"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+        />
+
+        <in.lanetbit.utils.customView.EditTextUbuntuLight
+            android:id="@+id/ed_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_border"
+            android:hint="@string/email_title"
+            android:textColor="@color/colorTextGrey"
+            android:textColorHint="@color/colorTextGrey"
+            android:textSize="@dimen/text_normal"
+            android:padding="@dimen/padding_12"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="@dimen/dimen_12"
+            />
+
+        <in.lanetbit.utils.customView.EditTextUbuntuLight
+            android:id="@+id/ed_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_border"
+            android:hint="@string/password_name"
+            android:inputType="textPassword"
+            android:textColor="@color/colorTextGrey"
+            android:textColorHint="@color/colorTextGrey"
+            android:textSize="@dimen/text_normal"
+            android:padding="@dimen/padding_12"
+            android:layout_marginTop="@dimen/dimen_12"
+            />
+
+        <in.lanetbit.utils.customView.EditTextUbuntuLight
+            android:id="@+id/ed_mobileNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_border"
+            android:hint="@string/mobile_no_title"
+            android:inputType="phone"
+            android:textColor="@color/colorTextGrey"
+            android:textColorHint="@color/colorTextGrey"
+            android:textSize="@dimen/text_normal"
+            android:padding="@dimen/padding_12"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:maxLength="10"
+
+            />
+<!--        <in.lanetbit.utils.customView.TextViewUbuntuMedium-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/gender_title"-->
+<!--            android:textSize="@dimen/text_normal"-->
+<!--            android:textColor="@color/colorTextGrey"-->
+<!--            android:layout_marginLeft="@dimen/dimen_8"-->
+<!--            android:layout_marginTop="@dimen/dimen_12"-->
+<!--            />-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginTop="@dimen/dimen_12">-->
+<!--            <RadioGroup-->
+<!--                android:id="@+id/rg_gender"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <androidx.appcompat.widget.AppCompatRadioButton-->
+<!--                    android:id="@+id/rb_male"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:buttonTint="@color/colorAccent"-->
+<!--                    android:checked="true"-->
+<!--                    android:scaleX="0.8"-->
+<!--                    android:scaleY="0.8"-->
+<!--                    android:text="@string/male_name"-->
+<!--                    android:textColor="@color/colorTextGrey"-->
+<!--                    android:textSize="@dimen/text_normal_17" />-->
+
+<!--                <androidx.appcompat.widget.AppCompatRadioButton-->
+<!--                    android:id="@+id/rb_female"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:buttonTint="@color/colorAccent"-->
+<!--                    android:scaleX="0.8"-->
+<!--                    android:scaleY="0.8"-->
+<!--                    android:text="@string/female_name"-->
+<!--                    android:textColor="@color/colorTextGrey"-->
+<!--                    android:textSize="@dimen/text_normal_17" />-->
+
+<!--            </RadioGroup>-->
+
+<!--        </LinearLayout>-->
+
+        <in.lanetbit.utils.customView.TextViewUbuntuMedium
+            android:id="@+id/tv_signUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_button_bg"
+            android:text="@string/signup_name"
+            android:textSize="@dimen/text_normal_17"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:padding="@dimen/padding_12"
+            android:layout_marginTop="@dimen/dimen_28"
+            android:layout_marginBottom="@dimen/dimen_28"/>
+
+
+        // Upload Document
+
+<!--        <in.lanetbit.utils.customView.TextViewUbuntuLight-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/edit_text_border"-->
+<!--            android:hint="@string/upload_doc_title"-->
+<!--            android:textColor="@color/colorWhite"-->
+<!--            android:textColorHint="@color/colorWhite"-->
+<!--            android:textSize="@dimen/text_normal"-->
+<!--            android:padding="@dimen/padding_12"-->
+<!--            android:layout_marginTop="@dimen/dimen_12"-->
+<!--            />-->
+
+<!--        <in.lanetbit.utils.customView.EditTextUbuntuLight-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/edit_text_border"-->
+<!--            android:hint="@string/email_title"-->
+<!--            android:textColor="@color/colorWhite"-->
+<!--            android:textColorHint="@color/colorWhite"-->
+<!--            android:textSize="@dimen/text_normal"-->
+<!--            android:padding="@dimen/padding_12"-->
+<!--            android:layout_marginTop="@dimen/dimen_12"-->
+<!--            />-->
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

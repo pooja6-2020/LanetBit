@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="0dp"
+    android:layout_marginTop="@dimen/dimen_12"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <in.lanetbit.utils.customView.TextViewUbuntuRegular
+            android:id="@+id/tv_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_semi_normal"
+            android:padding="@dimen/padding_5"
+            android:layout_gravity="left|center"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+
+        <in.lanetbit.utils.customView.TextViewUbuntuRegular
+            android:id="@+id/tv_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_semi_normal"
+            android:padding="@dimen/padding_5"
+            android:layout_gravity="right|center"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

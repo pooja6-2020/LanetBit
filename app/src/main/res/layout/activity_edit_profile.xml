@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSignInBg"
+    tools:context=".activity.EditProfileActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dimen_12">
+    <ImageView
+
+        android:id="@+id/img_back_btn"
+
+        android:layout_width="@dimen/dimen_28"
+        android:layout_height="@dimen/dimen_22"
+        android:src="@drawable/ic_back"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_profile_title"
+        android:textColor="@color/colorTextGrey"
+        android:textSize="@dimen/text_large"
+        android:textFontWeight="500"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dimen_22"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_48">
+
+        <ImageView
+            android:id="@+id/img_profile_pic"
+            android:layout_width="@dimen/dimen_132"
+            android:layout_height="@dimen/dimen_132"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_shape_bg"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:padding="@dimen/padding_3"
+            />
+
+        <ImageView
+            android:id="@+id/img_btn_add_photo"
+            android:layout_width="@dimen/dimen_35"
+            android:layout_height="@dimen/dimen_35"
+            android:layout_marginLeft="-38dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/img_profile_pic"
+            android:src="@drawable/ic_add_photo"
+            />
+        <ImageView
+            android:id="@+id/img_btn_remove_photo"
+            android:layout_width="@dimen/dimen_35"
+            android:layout_height="@dimen/dimen_35"
+            android:layout_marginLeft="-28dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/img_profile_pic"
+            android:src="@drawable/ic_add_photo"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <in.lanetbit.utils.customView.TextViewUbuntuBold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/update_profile_name"
+        android:textSize="@dimen/text_large"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dimen_22"
+        />
+    <in.lanetbit.utils.customView.EditTextUbuntuLight
+        android:id="@+id/ed_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border"
+        android:hint="@string/full_name"
+        android:textColor="@color/colorTextGrey"
+        android:textColorHint="@color/colorTextGrey"
+        android:textSize="@dimen/text_normal"
+        android:padding="@dimen/padding_12"
+        android:layout_marginTop="@dimen/dimen_22"
+        android:cursorVisible="false"
+
+     />
+    <in.lanetbit.utils.customView.TextViewUbuntuLight
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border"
+        android:hint="@string/email_title"
+        android:textColor="@color/colorTextGrey"
+        android:textColorHint="@color/colorTextGrey"
+        android:textSize="@dimen/text_normal"
+        android:padding="@dimen/padding_12"
+        android:layout_marginTop="@dimen/dimen_12"
+        />
+    <in.lanetbit.utils.customView.TextViewUbuntuLight
+        android:id="@+id/tv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border"
+        android:hint="@string/mobile_no_title"
+        android:textColor="@color/colorTextGrey"
+        android:textColorHint="@color/colorTextGrey"
+        android:textSize="@dimen/text_normal"
+        android:padding="@dimen/padding_12"
+        android:layout_marginTop="@dimen/dimen_12"
+        />
+    <in.lanetbit.utils.customView.TextViewUbuntuLight
+        android:id="@+id/tv_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border"
+        android:hint="@string/country_name"
+        android:textColor="@color/colorTextGrey"
+        android:textColorHint="@color/colorTextGrey"
+        android:textSize="@dimen/text_normal"
+        android:padding="@dimen/padding_12"
+        android:layout_marginTop="@dimen/dimen_12"
+        />
+
+    <in.lanetbit.utils.customView.TextViewUbuntuMedium
+        android:id="@+id/tv_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_button_bg"
+        android:text="@string/save_exit_name"
+        android:textSize="@dimen/text_normal_17"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:padding="@dimen/padding_12"
+        android:textAllCaps="true"
+        android:layout_marginTop="@dimen/dimen_32"/>
+</LinearLayout>
+</RelativeLayout>
+</ScrollView>

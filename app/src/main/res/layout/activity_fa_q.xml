@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSignInBg"
+    tools:context=".activity.FaQActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/dimen_28"
+        android:layout_height="@dimen/dimen_22"
+        android:layout_gravity="left"
+        android:src="@drawable/ic_back" />
+
+    <in.lanetbit.utils.customView.TextViewUbuntuBold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_28"
+        android:text="@string/faq_name"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_large" />
+        <LinearLayout
+            android:id="@+id/ll_passport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_28"
+            android:background="@drawable/edit_text_border"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_12">
+                <in.lanetbit.utils.customView.TextViewUbuntuMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/faq1_name"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_normal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow" />
+        </LinearLayout>
+        <in.lanetbit.utils.customView.TextViewUbuntuLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/dimen_18"
+            android:layout_marginLeft="@dimen/dimen_2"
+            android:layout_marginRight="@dimen/dimen_2"
+            android:text="@string/faq1_desc"
+            android:textColor="@color/colorTextGrey"
+            android:textSize="@dimen/text_normal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_38"
+            android:background="@drawable/edit_text_border"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_12">
+            <in.lanetbit.utils.customView.TextViewUbuntuMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/faq2_name"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_normal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:background="@drawable/edit_text_border"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_12">
+            <in.lanetbit.utils.customView.TextViewUbuntuMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/faq3_name"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_normal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:background="@drawable/edit_text_border"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_12">
+            <in.lanetbit.utils.customView.TextViewUbuntuMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/faq4_name"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_normal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:background="@drawable/edit_text_border"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_12">
+            <in.lanetbit.utils.customView.TextViewUbuntuMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/faq5_name"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_normal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#07A521</color>
+    <color name="colorFadeAccent">#4F0B9103</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorTextGrey">#818181</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorSplashLoad">#07A521</color>
+    <color name="colorDarkOverlaySplash">#948D8D8D</color>
+    <color name="colorLightOverlaySplash">#BCA2A2A2</color>
+    <color name="colorSignInBg">#232323</color>
+    <color name="colorFadeBg">#03FFFFFF</color>
+    <color name="colorShadowBg">#0A5B6314</color>
+    <color name="colorTransparent">#00FFFFFF</color>
+    <color name="colorStrokeColor">#333333</color>
+    <color name="colorDarkRed">#FF0000</color>
+
+</resources>

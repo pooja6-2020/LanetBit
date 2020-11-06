@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSignInBg"
+    tools:context=".activity.AuthActivity">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/left_half_circle_shape"
+    android:layout_alignParentRight="true"
+    android:layout_centerInParent="true"
+    android:layout_marginTop="@dimen/dimen_82"
+    android:layout_marginLeft="@dimen/dimen_110"
+    android:layout_marginBottom="@dimen/dimen_82"/>
+
+    <ImageView
+        android:id="@+id/iv_parent_logo"
+        android:layout_width="@dimen/dimen_68"
+        android:layout_height="@dimen/dimen_68"
+        android:src="@drawable/ic_logo_lanetbit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_22"/>
+    <LinearLayout
+        android:id="@+id/ll_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_parent_logo"
+        android:background="@color/colorFadeBg"
+        android:layout_marginTop="@dimen/dimen_48"
+        android:gravity="center"
+        android:paddingTop="@dimen/padding_2"
+        android:paddingBottom="@dimen/padding_2"
+        >
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/tab_layout_background"
+            app:tabGravity="center"
+            android:layout_centerInParent="true"
+            app:tabMode="scrollable"
+            app:tabBackground="@drawable/tab_layout_selector"
+            app:tabSelectedTextColor="@color/colorWhite"
+            app:tabPaddingStart="@dimen/dimen_22"
+            app:tabPaddingEnd="@dimen/dimen_22"
+            app:tabIndicatorHeight="0dp"
+
+            app:tabRippleColor="@null"
+            app:tabTextAppearance="@style/TabTextAppearance"/>
+
+    </LinearLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_below="@+id/ll_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
